@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="Javascript Quiz">
+  <meta name="description" content="Website for Learning Javascript with quizzes">
+  <meta name="keywords" content="Javascript, Code, quiz">
+  <meta name="author" content="Thapelo Khantsi">
+  <title>T-Learn| Welcome</title>
+  <link rel="stylesheet" href="./CSS/quiz2.css">
+</head>
+<!-- Open Header -->
+<header>
+  <div class="container">
+    <div id="branding">
+      <h1>
+        <span class="highlight">T -</span>Learn</h1>
+    </div>
+    <!-- Navigation Bar beginning -->
+    <nav>
+      <ul>
+        <li class="current">
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="http://referencedesigner.com/tutorials/js/js_1.php">Library</a>
+        </li>
+        <li>
+          <a href="Contact_Us.html">Contact_Us</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- End of Navigation bar -->
+  </div>
+</header>
+<!-- Close header -->
+
+<body>
+  <div id="main">
+    <!-- open main div -->
+    <div id="header">
+      <!-- open header div -->
+      <h1>Quiz3</h1>
+    </div>
+    <!-- close header div -->
+
+    <form id="form1">
+      <fieldset>
+        <h4>1. Which of the following function of String object would compare a regular expression with a string?
+        </h4>
+        <select id="Q31">
+          <option>select an answer</option>
+          <option value="1">match()</option>
+          <option value="2">concat()</option>
+          <option value="3">search()</option>
+          <option value="4">replace()</option>
+        </select>
+
+        <h4>2. Select a String function that creates a string and display in a big font as if it were in a tag?</h4>
+        <label>1. anchor()</label>
+        <label>2. blink()</label>
+        <label>3. italics()</label>
+        <label>4. big()</label>
+        <input type="number" name="number" min="1" max="4" id="Q32" style="width: 50px; margin-top: 10px; margin-left: -1px;">
+
+
+        <!-- Correct = big() -->
+
+        <h4>3. Which of the following function of String object returns the capitalized string while respecting the current locale?</h4>
+        <label>1. toString()</label>
+        <label>2. toUpperCase()</label>
+        <label>3. toLocaleUpperCase()</label>
+        <label>4. substring()</label>
+        <label>
+          <input type="range" name="range" value="0" min="1" max="4" id="Q33" style="width: 200px; margin-top: 10px; margin-left: -5px;">
+          <span id="disVal" style="color: green; font-weight: bolder; font-size: 25px;"></span>
+        </label>
+        <!-- Corret= toLocaleUpperCase() -->
+
+        <h4>4. Is it valid to pass an anonymous function as an argument to another function?</h4>
+        <div style="width: 300px; display: inline-block;">
+          <div class="Q34" value="1" style=" height: 35px; width: 150px; background-color: rgb(50,50,50); color: white; text-align: center; border-top-left-radius: 7px; border-bottom-left-radius: 7px; font-family: monospace;  cursor: pointer; line-height: 35px; float: left; font-size: 14px;">True</div>
+          <div class="Q34" value="2" style="float: right; height: 35px; width: 150px; background-color: rgb(50,50,50); color: white; text-align: center; border-top-right-radius: 7px; border-bottom-right-radius: 7px; font-family: monospace; cursor: pointer; line-height: 35px; font-size: 14px;">False</div>
+        </div>
+        <!-- Correct = true -->
+
+        <h4>5. What is the output of the below JavaScript code?</h4>
+        <xmp>
+          <script>
+            function getFunc() {
+              var a = 7;
+              return function (b) {
+                alert(a + b);
+              }
+            }
+            var f = getFunc();
+            f(5);
+          </script>
+        </xmp>
+        <input type="text" name="text" placeholder="enter your answer" id="Q35" style="width: 300px;">
+        <!-- Correct =  (12) -->
+        <h4>6. What is the output of the following JavaScript snippet?</h4>
+        <xmp>
+          <script>
+            function () {
+              var a = 10;
+              if (a > 5) {
+                a = 7;
+              }
+              alert(a);
+            }
+          </script>
+        </xmp>
+        <input type="text" name="text2" placeholder="enter your answer" id="Q36" style="width: 300px;">
+        <!-- Correct= 7 -->
+
+        <h4>7. Which of the following functions of Number object would display output in exponential format?(select one) </h4>
+        <label>
+          <input type="checkbox" name="checkbox1" value="1" class="Q37">toFixed()</label>
+        <label>
+          <input type="checkbox" name="checkbox2" value="2" class="Q37">toExponential()</label>
+        <label>
+          <input type="checkbox" name="checkbox3" value="3" class="Q37">toPrecision()</label>
+        <label>
+          <input type="checkbox" name="checkbox1" value="4" class="Q37">t</label>
+        <!-- Correct = toExponetial() -->
+
+
+        <h4>8. Which is the use of typeof operator in JavaScript?</h4>
+        <!-- <xmp>
+   <script>
+    function() {
+      var a = 10;
+      if(a > 5) {
+        a = 7;
+      }
+      alert(a);
+    }
+  </script>
+  </xmp> -->
+        <!-- Correct= Both of the Above -->
+        <div id="stage2" ondrop="drop(event)" ondragover="allowDrop(event)" style="height: 35px; width: 600px; border: 1px solid gray; background-color: white; border-radius: 5px; margin-left: 2.5%; text-align: center; color: #00c853;">
+        </div>
+        <div id="child1" ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-left: 20px; margin-top: 5px;">
+          <div id="answer11a" draggable="true" ondragstart="drag(event)">1). Its value is a string indicating the data type of the operand.</div>
+        </div>
+        <div id="child2" ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-left: 20px; margin-top: 5px;">
+          <div id="answer11b" draggable="true" ondragstart="drag(event)">2). The typeof is a unary operator. It should occur before the single operand, which can be of any type.</div>
+        </div>
+        <div id="child3" ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-left: 20px; margin-top: 5px;">
+          <div id="answer11c" draggable="true" ondragstart="drag(event)">3). Both of the above.</div>
+        </div>
+        <div id="child4" ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-left: 20px; margin-top: 5px;">
+          <div id="answer11d" draggable="true" ondragstart="drag(event)">4). None</div>
+        </div>
+
+        <h4>9. Which of the following JavaScript code snippet would create an object? [Drag your answer into the box]
+        </h4>
+        <!--  <xmp>
+    <script>
+      function() {
+        var a = 10;
+        if(a > 5) {
+          a = 7;
+        }
+        alert(a);
+      }
+    </script>
+  </xmp> -->
+        <!-- Correct = var holder = new Object(); -->
+        <div id="stage" ondrop="drop(event)" ondragover="allowDrop(event)" style="height: 35px; width: 600px; border: 1px solid gray; background-color: white; border-radius: 5px; margin-left: 2.5%; text-align: center; color: #00c853;">
+        </div>
+        <div id="child1" ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-left: 20px; margin-top: 5px;">
+          <div id="answer12a" draggable="true" ondragstart="drag(event)">1). var holder = new Object();</div>
+        </div>
+        <div id="child2" ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-left: 20px; margin-top: 5px;">
+          <div id="answer12b" draggable="true" ondragstart="drag(event)">2). var holder = new holder();</div>
+        </div>
+        <div id="child3" ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-left: 20px; margin-top: 5px;">
+          <div id="answer12c" draggable="true" ondragstart="drag(event)">3). var holder = new OBJECT();</div>
+        </div>
+        <div id="child4" ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-left: 20px; margin-top: 5px;">
+          <div id="answer12d" draggable="true" ondragstart="drag(event)">4). var holder = Object();</div>
+        </div>
+
+        <h4>10. Which of the following is the output of the below JavaScript code?</h4>
+        <xmp>
+          <script>
+            function () {
+              if (true) {
+                var a = 5;
+              }
+              alert(a);
+            }
+          </script>
+        </xmp>
+
+        <!-- Correct: 5 -->
+        <label>
+          <input type="radio" name="radio1" class="Q310" value="1">1). 0</label>
+        <label>
+          <input type="radio" name="radio1" class="Q310" value="2">2). null</label>
+        <label>
+          <input type="radio" name="radio1" class="Q310" value="3">3). 5</label>
+        <label>
+          <input type="radio" name="radio1" class="Q310" value="4">4). undefined</label>
+
+      </fieldset>
+    </form>
+
+    <button id="q3ndbtn">Submit</button>
+
+    <p>Your grade is:
+      <span id="_score">__</span>
+    </p>
+
+    <!-- <p id="grade2"></p> -->
+
+  </div>
+  <!-- close main div -->
+
+
+  <!-- you may want to consider keeping the rest of your scripts below. -->
+
+  <script src="./script/gradeQ3.js"></script>
+
+</body>
+
+</html>
